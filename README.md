@@ -45,7 +45,7 @@ cd catalog-system
 
 1. Register a new user: Post Method
 
-  curl --location 'http://127.0.0.1:8001/api/auth/register' \
+  curl --location 'http://127.0.0.1:8000/api/auth/register' \
 --form 'name="Shiv Kumar"' \
 --form 'email="sk8597147@gmail.com"' \
 --form 'password="12345678"' \
@@ -57,18 +57,18 @@ resposnse :
 
 2. Login: Post Method
 
-curl --location 'http://127.0.0.1:8001/api/auth/login' \
+curl --location 'http://127.0.0.1:8000/api/auth/login' \
 --form 'email="sk8597147@gmail.com"' \
 --form 'password="12345678"'
 
 3. Get All Categories: Get method
   
-curl --location 'http://127.0.0.1:8001/api/categories' \
+curl --location 'http://127.0.0.1:8000/api/categories' \
 --header 'Authorization: Bearer mXAEIOPBQl8tyjJ3EFHuDLyuhWRlznpR9g6kLg3W338Owdk6jEm4irOV8R4K'
 
 4. Get Categories Items : Post Method
   
-  curl --location 'http://127.0.0.1:8001/api/categories/sports/items' \
+  curl --location 'http://127.0.0.1:8000/api/categories/sports/items' \
 --header 'Authorization: Bearer mXAEIOPBQl8tyjJ3EFHuDLyuhWRlznpR9g6kLg3W338Owdk6jEm4irOV8R4K' \
 --form 'min_price="50"' \
 --form 'max_price="100"' \
